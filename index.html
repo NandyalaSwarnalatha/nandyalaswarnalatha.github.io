@@ -1,110 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>N. Swarnalatha | Java Full Stack Developer</title>
-    <style>
-        body {
-            font-family: "Segoe UI", Arial, sans-serif;
-            margin: 0;
-            background-color: #f7f9fb;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(90deg, #007bff, #0056b3);
-            color: white;
-            text-align: center;
-            padding: 50px 0;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.2em;
-        }
-        header p {
-            font-size: 1.2em;
-        }
-        section {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #0056b3;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            background: #f0f8ff;
-            margin: 10px 0;
-            padding: 15px;
-            border-left: 5px solid #007bff;
-            border-radius: 8px;
-        }
-        footer {
-            background: #222;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>N. Swarnalatha | Java Full Stack Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #007bff, #0056b3);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #e2e2e2;
+    }
+
+    nav {
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 10px 0;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #007bff;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      color: #0056b3;
+      margin-bottom: 15px;
+      border-left: 4px solid #007bff;
+      padding-left: 10px;
+    }
+
+    p, li {
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #eef5ff;
+      margin: 10px 0;
+      padding: 12px;
+      border-left: 5px solid #007bff;
+      border-radius: 6px;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #00aaff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .skills p {
+      margin-bottom: 8px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 5px 10px;
+      padding: 8px 15px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .contact a:hover {
+      background-color: #0056b3;
+    }
+
+    .projects li b {
+      color: #0056b3;
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
+  <header class="fade-in">
+    <h1>N. Swarnalatha</h1>
+    <p>Java Full Stack Developer | Spring Boot | Hibernate | MySQL | Web Technologies</p>
+  </header>
 
-    <header>
-        <h1>N. Swarnalatha</h1>
-        <p>Java Full Stack Developer | Spring Boot | Hibernate | MySQL | Web Technologies</p>
-    </header>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <section>
-        <h2>About Me</h2>
-        <p>I am a dedicated and enthusiastic Java Full Stack Developer with hands-on experience in building robust web applications using Spring Boot, Hibernate, Servlets, JSP, and MySQL. I am passionate about backend development, API design, and creating efficient, scalable web applications.</p>
-    </section>
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>I am a passionate and dedicated <b>Java Full Stack Developer</b> skilled in building end-to-end web applications using <b>Spring Boot, Hibernate, Servlets, JSP, and MySQL</b>. I enjoy solving real-world problems through clean, efficient, and maintainable code. I’m eager to apply my skills in professional projects and grow as a backend & full stack developer.</p>
+  </section>
 
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li><b>Spring Boot CRUD Operations</b> — Built RESTful APIs for managing database operations using Spring Boot and MySQL.</li>
-            <li><b>Hostel Management System (Servlets & JSP)</b> — Developed a dynamic web application for hostel administration using Java Servlets, JSP, and JDBC.</li>
-            <li><b>Hibernate CRUD Operations</b> — Implemented CRUD functionalities using Hibernate ORM with MySQL backend.</li>
-            <li><b>Spring Boot CRUD with REST API</b> — Created REST API endpoints and integrated them with frontend for seamless data flow.</li>
-        </ul>
-    </section>
+  <section id="projects" class="fade-in projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><b>Spring Boot CRUD Operations</b> — RESTful API for performing Create, Read, Update, Delete using Spring Boot + MySQL.</li>
+      <li><b>Hostel Management System (Servlets & JSP)</b> — Dynamic web app for hostel management built with Servlets, JSP, and JDBC.</li>
+      <li><b>Hibernate CRUD Operations</b> — CRUD app using Hibernate ORM framework and MySQL database.</li>
+      <li><b>Spring Boot REST API CRUD</b> — Built reusable APIs and tested with Postman; integrated with frontend pages.</li>
+    </ul>
+  </section>
 
-    <section>
-        <h2>Technical Skills</h2>
-        <p><b>Languages:</b> Java, HTML, CSS, JavaScript</p>
-        <p><b>Frameworks:</b> Spring Boot, Hibernate, Servlets, JSP</p>
-        <p><b>Database:</b> MySQL</p>
-        <p><b>Tools:</b> Eclipse, VS Code, GitHub, Postman</p>
-    </section>
+  <section id="skills" class="fade-in skills">
+    <h2>Technical Skills</h2>
+    <p><b>Languages:</b> Java, HTML, CSS, JavaScript</p>
+    <p><b>Frameworks:</b> Spring Boot, Hibernate, Servlets, JSP</p>
+    <p><b>Database:</b> MySQL</p>
+    <p><b>Tools:</b> Eclipse, VS Code, GitHub, Postman</p>
+    <p><b>Version Control:</b> Git, GitHub</p>
+  </section>
 
-    <section>
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:nandyalaswarnalatha@gmail.com">nandyalaswarnalatha@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/NandyalaSwarnalatha" target="_blank">github.com/NandyalaSwarnalatha</a></p>
-        <p>LinkedIn: <a href="#">(Add your LinkedIn URL here)</a></p>
-    </section>
+  <section id="contact" class="fade-in contact">
+    <h2>Contact</h2>
+    <p>If you'd like to get in touch, feel free to reach out to me:</p>
+    <a href="mailto:nandyalaswarnalatha@gmail.com">Email Me</a>
+    <a href="https://github.com/NandyalaSwarnalatha" target="_blank">GitHub</a>
+  </section>
 
-    <footer>
-        <p>© 2025 N. Swarnalatha | Java Full Stack Developer | Built with ❤️ using GitHub Pages</p>
-    </footer>
-
+  <footer>
+    <p>© 2025 N. Swarnalatha | Java Full Stack Developer</p>
+    <p>Built with ❤️ using GitHub Pages | <a href="https://github.com/NandyalaSwarnalatha">View Source</a></p>
+  </footer>
 </body>
 </html>
